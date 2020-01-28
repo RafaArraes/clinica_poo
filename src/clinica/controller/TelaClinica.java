@@ -144,7 +144,7 @@ public class TelaClinica {
                                     index = consultas.indexOf(consulta);
                                     flag = true;
                                 }
-                            }
+                            }   
 
                             if (flag) {
                                 secretaria.editarConsulta(consultas, consultas.get(index),
