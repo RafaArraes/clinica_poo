@@ -57,7 +57,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Clinica");
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        setPreferredSize(new java.awt.Dimension(500, 400));
         setResizable(false);
         addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
@@ -89,6 +88,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jMenuItemEditarPaciente.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jMenuItemEditarPaciente.setText("Editar Paciente");
+        jMenuItemEditarPaciente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemEditarPacienteActionPerformed(evt);
+            }
+        });
         jMenuSecretaria.add(jMenuItemEditarPaciente);
 
         jMenuItemExcluirPaciente.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
@@ -168,6 +172,20 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenuSair.setText("  SAIR   ");
         jMenuSair.setBorderPainted(false);
         jMenuSair.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jMenuSair.addMenuListener(new javax.swing.event.MenuListener() {
+            public void menuSelected(javax.swing.event.MenuEvent evt) {
+            }
+            public void menuDeselected(javax.swing.event.MenuEvent evt) {
+            }
+            public void menuCanceled(javax.swing.event.MenuEvent evt) {
+                jMenuSairMenuCanceled(evt);
+            }
+        });
+        jMenuSair.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jMenuSairMouseClicked(evt);
+            }
+        });
         jMenuSair.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuSairActionPerformed(evt);
@@ -217,10 +235,23 @@ public class TelaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_formFocusGained
 
     private void jMenuSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuSairActionPerformed
-        JOptionPane.showMessageDialog(null,"finish");
-        System.exit(0);
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuSairActionPerformed
+
+    private void jMenuSairMenuCanceled(javax.swing.event.MenuEvent evt) {//GEN-FIRST:event_jMenuSairMenuCanceled
+       // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuSairMenuCanceled
+
+    private void jMenuSairMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenuSairMouseClicked
+        System.exit(0);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuSairMouseClicked
+
+    private void jMenuItemEditarPacienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemEditarPacienteActionPerformed
+        TelaEditarPaciente edit = new TelaEditarPaciente();
+        edit.setVisible(true);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItemEditarPacienteActionPerformed
 
     /**
      * @param args the command line arguments

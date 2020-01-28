@@ -5,7 +5,11 @@
         <group>
             <file>file:/home/gabriel/NetBeansProjects/TrabalhoPOO_MVC/src/clinica/controller/TelaClinica.java</file>
             <file>file:/home/gabriel/NetBeansProjects/TrabalhoPOO_MVC/src/clinica/controller/ControlSecretario.java</file>
+            <file>file:/home/gabriel/NetBeansProjects/TrabalhoPOO_MVC/src/clinica/view/TelaCadastroPaciente.java</file>
+            <file>file:/home/gabriel/NetBeansProjects/TrabalhoPOO_MVC/src/clinica/model/Secretaria.java</file>
             <file>file:/home/gabriel/NetBeansProjects/TrabalhoPOO_MVC/src/clinica/view/TelaPrincipal.java</file>
+            <file>file:/home/gabriel/NetBeansProjects/TrabalhoPOO_MVC/src/clinica/model/GerenciarClinica.java</file>
+            <file>file:/home/gabriel/NetBeansProjects/TrabalhoPOO_MVC/src/clinica/view/TelaEditarPaciente.java</file>
         </group>
     </open-files>
 </project-private>
